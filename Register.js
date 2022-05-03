@@ -20,7 +20,6 @@ function register(event){
      name = document.getElementById('name').value
      email = document.getElementById('email').value
      password = document.getElementById('password').value
-     TotalIncome = ""
      firebase.auth().createUserWithEmailAndPassword(email, password)
      
    .then((userCredential) => { 
@@ -34,8 +33,7 @@ function register(event){
      firebase.database().ref('Users/' + user1.uid).set({
        UserId: user1.uid,
        Name : name,
-        Email: email,
-        TotalIncome : TotalIncome
+        Email: email
         
    
      })

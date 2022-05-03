@@ -1,7 +1,4 @@
 
-
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-analytics.js";
 var  firebaseConfig = {
   apiKey: "AIzaSyD804xBhcN5swK-Buq13q2V_OK4c2optQ4",
   authDomain: "site-oracle.firebaseapp.com",
