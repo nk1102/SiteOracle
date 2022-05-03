@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="register.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="register.js"></script>
+   </head>
+<body>
+
+  <style>
+  
+    .loader-container {
+      
+    
+      display: block;
+      margin-left: -40px;
+      
+      display: none;
+
+      
+    }
+    .loader {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 10px solid rgba(0, 0, 0, 0.3);
+      border-top: 10px solid rgb(0, 0, 0);
+      animation: lodder 1.0s infinite linear;
+    }
+    p {
+      font-family: arial;
+      margin-top: 10px;
+      color: rgb(17, 16, 16);
+      
+      text-transform: uppercase;
+    }
+    @keyframes lodder {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+   
+  <div class="container" >
+    <div class="cover">
+      <div class="loader-container" id="loadingscreen">
+        <div class="loader"></div>
+        <p>loading</p>
+      </div>
+      <div class="front">
+        <!-- <img src="./Images/undraw_completing_6bhr.svg" alt=""> -->
+      </div>
+
+     
+    </div>
+    
+
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Register</div>
+            <form  onsubmit="register(event)" id="registerform">
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input  id="name"type="text" autocomplete="off" placeholder="Enter your name" required>
+                    
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input id="email" type="text" autocomplete="off" placeholder="Enter your email" required>
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input id="password"type="password"autocomplete="off" placeholder="Enter your password" required>
+                  </div>
+                 
+                  <div class="button input-box">
+                    <input  type="submit" value="Register" >
+                   
+                   
+                  </div>
+                  <div class="text sign-up-text">Already have an account?  <a href="./SiteOracle/Login.html">Login</a></div>
+                  
+                </div>
+                <h5><small>&copy; Site Oracle, All Rights Reserved.</small> </h5>
+          </form>
+      </div>
+       
+    </div>
+    </div>
+    
+    
+    </div>
+   
+</body>
+</html>
