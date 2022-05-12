@@ -152,3 +152,10 @@ function chatbotfunction(){
   document.getElementById('analytics1').style.display = "block";
 
 }
+function developers(){
+  //   alert('this section will be updated later')
+    document.getElementById('analytics').style.display = "none";
+    document.getElementById('analytics1').style.display = "none";
+    document.getElementById('developers').style.display="block";
+  
+  }
