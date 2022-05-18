@@ -140,7 +140,7 @@ function moneyspent(event){
 function logout(){
     firebase.auth().signOut().then(function() {
         alert("Logout Successfull")
-        location.replace("login.html")
+        location.replace("Login.html")
       }, function(error) {
         console.log(error)
       });
